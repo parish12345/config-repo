@@ -7,10 +7,6 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: actuator
-          uri: http://localhost:9000
-          predicates:
-            - Path=/actuator/**
         - id: account
           uri: lb:http://ACCOUNT
           predicates:
