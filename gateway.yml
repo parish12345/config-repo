@@ -1,0 +1,21 @@
+server:
+  port: 9000
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: account
+          uri: lb:http://ACCOUNT
+          predicates:
+            - Path=/api/accounts/**
+        - id: inventory
+          uri: lb:http://INVENTORY
+          predicates:
+            - Path=/api/books/**
+        - id: order
+          uri: lb:http://ORDER
+          predicates:
+            - Path=/api/orders/**
