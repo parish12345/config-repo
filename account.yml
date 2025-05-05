@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    name: account
+    generate-unique-name: false
+  h2:
+    console:
+      enabled: true
+server:
+  port: 8001
