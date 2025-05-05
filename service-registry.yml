@@ -3,3 +3,4 @@ server:
   client:
     register-with-eureka: false
     fetch-registry: false
+foo: ${FOO}
