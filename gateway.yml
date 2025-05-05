@@ -11,11 +11,20 @@ spring:
           uri: lb:http://ACCOUNT
           predicates:
             - Path=/api/accounts/**
+          filters:
+            - name: LoggingFilter
+            - name: HeaderInjectionFilter
         - id: inventory
           uri: lb:http://INVENTORY
           predicates:
             - Path=/api/books/**
+          filters:
+            - name: LoggingFilter
+            - name: HeaderInjectionFilter
         - id: order
           uri: lb:http://ORDER
           predicates:
             - Path=/api/orders/**
+          filters:
+            - name: LoggingFilter
+            - name: HeaderInjectionFilter
