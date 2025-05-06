@@ -1,1 +1,4 @@
-foo: Hello
+token-bucket:
+  capacity: 2
+  refill-size: 1
+  refill-rate: 10
