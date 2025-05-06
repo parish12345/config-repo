@@ -25,4 +25,5 @@ resilience4j:
         eventConsumerBufferSize: 10
         ignoreExceptions:
         - feign.FeignException.BadRequest
+        - com.pineapple.order.exception.ServiceFailureException
 
