@@ -22,4 +22,6 @@ resilience4j:
         waitDurationInOpenState: 10s
         permittedNumberOfCallsInHalfOpenState: 3
         eventConsumerBufferSize: 10
+        ignoreExceptions:
+        - feign.FeignException.BadRequest
 
