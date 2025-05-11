@@ -1,9 +1,12 @@
 spring:
   datasource:
-    name: account
-    generate-unique-name: false
-  h2:
-    console:
-      enabled: true
+    url: jdbc:postgresql://localhost:5432/product
+    username: admin
+    password: changeinprod
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
 server:
   port: 8001
