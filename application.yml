@@ -1,9 +1,9 @@
 eureka:
   instance:
     hostname: ${EUREKA_SERVER_HOSTNAME}
-    client:
-      serviceUrl:
-        defaultZone: http://${EUREKA_SERVER_HOSTNAME}:${EUREKA_SERVER_PORT}/eureka
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_SERVER_HOSTNAME}:${EUREKA_SERVER_PORT}/eureka
 spring:
   cloud:
     config:
