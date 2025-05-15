@@ -3,7 +3,7 @@ eureka:
     hostname: ${EUREKA_SERVER_HOSTNAME}
     client:
       serviceUrl:
-        defaultZone: http://v${EUREKA_SERVER_HOSTNAME}:${EUREKA_SERVER_PORT}/eureka
+        defaultZone: http://${EUREKA_SERVER_HOSTNAME}:${EUREKA_SERVER_PORT}/eureka
 spring:
   cloud:
     config:
